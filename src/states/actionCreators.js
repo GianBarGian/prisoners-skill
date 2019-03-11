@@ -5,7 +5,7 @@ export const getPrisons = () => dispatch => {
     dispatch(spinnerOn());
     axios.get("http://demo4752238.mockable.io/prisons")
         .then(res => {
-            dispatch({ type: types.GET_PRISONS, payload: res.data });
+            dispatch({ type: types.GET_PRISONS, payload: res.data.prisons });
         })
         .catch(err => {
             dispatch({ type: types.ERROR, payload: err });
