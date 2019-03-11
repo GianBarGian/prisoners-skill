@@ -3,7 +3,7 @@ import * as types from './actionTypes';
 export function prisons(state = [], action) {
     switch (action.type) {
         case types.GET_PRISONS:
-            return //todo;
+            return action.payload;
         case types.ADD_PRISONER:
             return //todo;
         case types.DELETE_PRISONER:
